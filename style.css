@@ -107,12 +107,26 @@ header.sticky .logo , header.sticky ul li a {
 
 .slanted {
     background-color: #fff;
-    height: 900px;
+    height: 850px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
     clip-path: polygon(0 30%, 100% 0, 100% 66%, 0 80%); 
     
+    
 }
 
+.slanted h1{
+    text-align: right;
+    padding: 180px 200px 0 0 ;
+    font-size: 60px;
+}
+
+.slanted p {
+    margin-top: 40px;
+    padding-left: 200px;
+    width: 90%;
+    font-weight: 400;
+    font-size: 20px;
+}
 
 
 
