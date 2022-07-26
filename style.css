@@ -76,3 +76,45 @@ header.sticky .logo , header.sticky ul li a {
  
     color: #000;
 }
+
+
+/* Custom Div */
+
+/* .cus-div{
+    width: 100%;
+    position: relative;
+}
+
+#skew {
+    background: #fff;
+    z-index: 9;
+}
+
+.cus-div::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    bottom: 0;
+    content: '';
+}
+
+#skew::after{
+    transform-origin: left bottom;
+    transform: skew(3deg);
+} */
+
+.slanted {
+    background-color: #fff;
+    height: 900px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+    clip-path: polygon(0 30%, 100% 0, 100% 66%, 0 80%); 
+    
+}
+
+
+
+
+
+
