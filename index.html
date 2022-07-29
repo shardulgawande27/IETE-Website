@@ -240,6 +240,68 @@
 </section>
 
 
+<!-- faculty slider -->
+
+<section class="faculty">
+
+
+    <div class="hero">
+        <h1>Words from our faculty</h1>
+
+        <div class="faculty-container">
+            <div class="indicator">
+                <span class="faculty-btn active"></span>
+                <span class="faculty-btn"></span>
+                <span class="faculty-btn"></span>
+
+            </div>
+            <div class="phrase">
+            <div class="slide-row" id="slide">
+                <div class="slide-col">
+                    <div class="faculty-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quis sed voluptate impedit veritatis asperiores voluptatem? Earum, saepe architecto exercitationem necessitatibus eum expedita esse debitis.</p>
+                        <h3>name</h3>
+                        <p>position</p>
+                    </div>
+                    <div class="faculty-img">
+                        <img src="./img/DSC_0103.JPG" alt="img">
+                    
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="faculty-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quis sed voluptate impedit veritatis asperiores voluptatem? Earum, saepe architecto exercitationem necessitatibus eum expedita esse debitis.</p>
+                        <h3>name</h3>
+                        <p>position</p>
+                    </div>
+                    <div class="faculty-img">
+                        <img src="./img/DSC_0103.JPG" alt="img">
+                    
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="faculty-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quis sed voluptate impedit veritatis asperiores voluptatem? Earum, saepe architecto exercitationem necessitatibus eum expedita esse debitis.</p>
+                        <h3>name</h3>
+                        <p>position</p>
+                    </div>
+                    <div class="faculty-img">
+                        <img src="./img/DSC_0103.JPG" alt="img">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        
+
+    </div>
+
+
+</section>
+
+
 <!-- footer -->
 
     <section class="footer">
@@ -291,6 +353,42 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         })
+
+        var btn = document.getElementsByClassName("faculty-btn");
+        var slide = document.getElementById("slide");
+
+        btn[0].onclick = function () {
+
+            slide.style.transform = "translateX(0px)";
+            for(i=0; i<3;i++){
+                btn[i].classList.remove("active")
+            }
+            this.classList.add("active")
+   
+        }
+
+        btn[1].onclick = function () {
+
+            slide.style.transform = "translateX(-1050px)";
+            for(i=0; i<3;i++){
+                btn[i].classList.remove("active")
+            }
+            this.classList.add("active")
+   
+
+        }
+
+        btn[2].onclick = function () {
+
+            slide.style.transform = "translateX(-2125px)";
+            for(i=0; i<3;i++){
+                btn[i].classList.remove("active")
+            }
+            this.classList.add("active")
+   
+
+        }
+
     </script>
 
 

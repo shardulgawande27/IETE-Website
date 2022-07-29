@@ -423,6 +423,117 @@ header.sticky .logo , header.sticky ul li a {
 }
 
 
+/* faculty slider */
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.hero h1{
+    text-align: center;
+    padding-top: 80px ;
+    font-size: 40px;
+    color: #fff;   
+}
+
+.slide-row{
+    display: flex;
+    width: 3200px;
+    transition: 0.5s;
+
+}
+
+.slide-col{
+    width: 1200px;
+    height: 400px;
+    position: relative;
+}
+
+.faculty-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-left: 500px;
+    /* width: 50%; */
+}
+
+.faculty-img img{
+    height: 100%;
+    border-radius: 10px;
+    width: 50%;
+    /* margin-left: 250px; */
+}
+
+.faculty-text{
+    background: #fff;
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: 0;
+    right: 70% ;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: #d3d4d6;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+
+}
+
+.faculty-text p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.faculty-text h3{
+    margin: 35px 0 5px;
+    color: #000;
+}
+
+.faculty-container{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+
+}
+
+.faculty-btn{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: #fff;
+    cursor: pointer;
+    transition:0.5s ;
+}
+
+.active{
+    width: 45px;
+}
+
+
+.phrase{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 
 
 /* footer */
