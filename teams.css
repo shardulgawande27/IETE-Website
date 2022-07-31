@@ -107,6 +107,9 @@
 /* footer */
 
 .footer{
+    font-weight: 400;
+    background-color: #fff;
+    padding: 40px 0;
+    margin-bottom: -700px;
 
-    margin-top: 600px;
 }

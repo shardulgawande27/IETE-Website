@@ -542,6 +542,7 @@ header.sticky .logo , header.sticky ul li a {
     font-weight: 400;
     background-color: #fff;
     padding: 40px 0;
+    width: 100%;
 
 }
 
