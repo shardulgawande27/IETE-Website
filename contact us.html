@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <section id="contact">
+        <div class="contact-box">
+            <div class="contact-links">
+                <h1>REACH US OUT</h1>
+                <img src="./img/download.png" alt="" style="display:block;margin: auto;" />
+                <div class="links">
+                    <div class="link">
+                        <i class="fa fa-linkedin fa-2x" style="color: black"></i>
+                    </div>
+                    <div class="link">
+                        <i class="fa fa-instagram fa-2x" style="color: black"></i>
+                    </div>
+                    <div class="link">
+                        <i class="fa fa-codepen fa-2x" style="color: black"></i>
+                    </div>
+                    <div class="link">
+                        <i class="fa fa-envelope fa-2x" style="color: black"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form>
+                    <div class="form-details">
+                        <input type="text" name="name" id="name" placeholder="Name" required />
+                        <input type="email" name="email" id="email" placeholder="Email" required />
+                        <textarea name="message" id="message" cols="52" rows="7" placeholder="Message" required></textarea>
+                        <button>SEND MESSAGE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+        </div>
+
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Teams</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">Sponsors</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            IETE KJSIEIT @ 2022
+        </p>
+    </section>
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        var btn = document.getElementsByClassName("faculty-btn");
+        var slide = document.getElementById("slide");
+
+        btn[0].onclick = function () {
+
+            slide.style.transform = "translateX(0px)";
+            for(i=0; i<3;i++){
+                btn[i].classList.remove("active")
+            }
+            this.classList.add("active")
+   
+        }
+
+        btn[1].onclick = function () {
+
+            slide.style.transform = "translateX(-1050px)";
+            for(i=0; i<3;i++){
+                btn[i].classList.remove("active")
+            }
+            this.classList.add("active")
+   
+
+        }
+
+        btn[2].onclick = function () {
+
+            slide.style.transform = "translateX(-2125px)";
+            for(i=0; i<3;i++){
+                btn[i].classList.remove("active")
+            }
+            this.classList.add("active")
+   
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
